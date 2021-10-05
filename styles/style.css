@@ -326,14 +326,18 @@ footer{
 /* El contenido lo ajusto al 100% */
 #Contenido{
     width: 100%;
+
 }
 
 /* Ajusta la tarjeta superior al 90% con un ancho maximo y flex */
 .TarjetaFoto{
     width: 90%;
-    height: 260px;
+    height: 250px;
     max-width: 450px;
+    text-align: center;
     display: flex;
+    align-items: center;
+    justify-content:space-around;
 }
 
 /* Ajusto la tarjeta de edad al 50% y menor fuente */
@@ -342,6 +346,8 @@ footer{
     box-sizing: border-box;
     height: 220px;
     border: 2px solid black;
+    max-width: 500px;
+    margin-left: 0;
 }
 .tarjeta h2{
     font-size: smaller;
@@ -369,9 +375,10 @@ footer{
 
 /* Imagen */
 .imagen{
-    float:none;
+    width: 150px;
+    height: 170px;
     border-radius: 10px;
     border: solid 2px black;
-    transform: scale(1);  
+      
 }
 }

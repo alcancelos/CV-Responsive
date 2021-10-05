@@ -1,0 +1,377 @@
+/*Variables globales*/
+:root{
+    --MarronFav: rgb(134, 4, 4);
+}
+
+body{
+    background-color: burlywood;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Caja principal de tamaño 800pixeles */
+#Contenido{
+    background-color: rgb(129, 124, 56);
+    background: linear-gradient(to right, rgb(129,124,56), rgb(129, 124, 100));
+    padding-top: 0px;
+    /* padding: 25px; */
+    width: 800px;  
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    border:2px solid black;
+    
+}
+
+/*            Barra de navegacion          */
+/* --------------------------------------- */
+nav {
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-size: 18px;
+    background-color: var(--MarronFav);
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    box-sizing: border-box;
+    height: 30px;
+    border-radius: 10px 10px 0 0;
+    padding-top: 4px;
+    
+    padding-bottom: 4px;
+    border-bottom: 1px solid black;
+    
+}
+
+nav a{
+    color: aliceblue;
+    font-style: normal;
+    text-decoration: none;
+    transition:all 0.3s ease;    
+}
+
+a{
+    color: aliceblue;
+}
+
+a:hover{
+    color: rgb(63, 46, 22);
+}
+nav a:hover{
+    color: rgb(63, 46, 22);
+    background-color: rgb(248, 175, 115);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border: 2px solid;
+    border-color: black;
+    /* Sombra de los botones */
+    box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+}
+
+/*      formulario              */
+/* ---------------------------- */
+#formulario{
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+}
+
+form input,textarea {
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    padding: 10px;
+    
+}
+
+/*          BOTONES  del Form           */
+/* -------------------------------------*/
+.Boton{
+    padding: 5px;
+    font-size: 18;
+    border: 0;
+    border-radius: 10px;
+    font-weight: 900;
+}
+
+.Enviar{
+    background-color: rgb(4, 119, 29);
+    color: aliceblue;
+}
+
+.Borrar{
+    background-color: red;
+    color: aliceblue;  
+}
+
+/* Tarjeta que contiene la foto y la otra tarjeta */
+/* ---------------------------------------------- */
+
+.TarjetaFoto{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    border-radius: 25px;
+    background-color: var(--MarronFav);
+    padding: 20px;
+    /*Para que se mantenga el tamaño*/
+    box-sizing: border-box;
+    box-shadow: 10px 10px 5px black;   
+}
+
+/* Esta es la tarjeta que tiene la edad y la direccion */
+/* --------------------------------------------------- */
+.tarjeta{
+    background-color: brown;
+    
+    width: 200px;
+    height: 210px;
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    float: right;
+    transition:all 0.3s ease;
+    border: 2px solid black;
+}
+
+.tarjeta h2{
+    color: burlywood;
+    font-size: 22px;
+    margin-top: 4px;
+}
+
+.tarjeta:hover{
+    background-color: rgb(175, 76, 76);
+    box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+}
+
+/* Imagen al lado de la tarjeta de edad y direccion    */
+/* --------------------------------------------------- */
+
+.imagen{
+    float:none;
+    border-radius: 10px;
+    border: solid 5px black;
+    border-image: round;
+     transition:all 0.3s ease; 
+     width: 200px;
+}
+
+.imagen:hover {filter: saturate(180%);}
+
+
+/*      Contenido del cv        */
+/* ---------------------------- */
+.TextoCv{    
+    width: 100%;
+    box-sizing: border-box;   
+}
+
+/*  Titulo con el nombre        */
+/* ---------------------------- */
+
+.Titulo{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Grechen Fuemen', cursive;
+    text-shadow: 4px 2px 2px rgba(215,177,177,0.6);
+}
+
+/*     Pie de Página            */
+/* ---------------------------- */
+footer{
+    background-color: brown;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    padding: 5px;
+    font-weight: 800;
+    font-size: 12px;
+    box-sizing: border-box;
+    border-top: 2px solid black;
+}
+
+/*    Fuente de Google          */
+/* ---------------------------- */
+
+.TextoSansPro{
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(31, 32, 31);;   
+}
+
+/*Con esto quito el margen superior de la P que me molesta */
+.TextoSansPro p{
+    margin: 0;
+}
+
+/* Iconos */
+.Iconos{
+    color: rgb(58, 16, 16);
+}
+
+/* Caja 1 - Formacion Academica */
+/* ---------------------------- */
+.Caja1{
+    width: 50%;
+    height: 200px;
+    float: left;
+    background-color: rgb(224, 184, 131);
+    padding: 5px;
+    box-sizing: border-box;
+    border-top: 2px black solid;
+   
+    border-bottom: 2px black solid;
+
+    margin-top: 20px;
+  transition:all 0.3s ease;
+    
+}
+.Caja1 h3{
+    text-align: center;
+}
+
+.Caja1:hover{
+    background-color:rgb(240, 186, 116) ;
+    box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+
+}
+
+/* Caja 2 - Competencias Clave  */
+/* ---------------------------- */
+
+.Caja2 h3{
+    text-align: center;
+}
+
+.Caja2{
+    width: 50%;
+    height: 200px;
+    float: left;
+    background-color: rgb(224, 184, 131);
+    padding: 5px;
+    box-sizing: border-box;
+    border-top: 2px black solid;
+   
+    border-bottom: 2px black solid;
+    border-left: 2px black solid;
+    margin-top: 20px;
+    transition:all 0.3s ease;
+}
+.Caja2:hover{
+    background-color:rgb(240, 186, 116) ;
+    box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+
+}
+
+/* Perfil */
+/* ---------------------------- */
+
+.Perfil{
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(224, 184, 131);
+    column-count: 2;
+    column-gap: 25px;
+    margin-top: 0;
+    color: rgb(31, 32, 31);
+    column-rule: 1px solid black;       
+    border-bottom: 2px black solid;  
+    box-sizing: border-box;
+    transition:all 0.3s ease;
+}
+
+.Perfil h3{
+    margin-top: 0;
+    text-align: center;
+}
+
+.Perfil:hover{
+    background-color:rgb(240, 186, 116) ;
+    box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+}
+
+
+.Contacto{
+    padding:25px;
+    box-sizing: border-box;
+    font-weight: 100%;
+}
+
+/* Pantallas menores a 800 pixels */
+@media screen and (max-width: 799px){
+
+/* El contenido lo ajusto al 100% */
+#Contenido{
+    width: 100%;
+}
+
+/* Ajusta la tarjeta superior al 90% con un ancho maximo y flex */
+.TarjetaFoto{
+    width: 90%;
+    height: 260px;
+    max-width: 450px;
+    display: flex;
+}
+
+/* Ajusto la tarjeta de edad al 50% y menor fuente */
+.tarjeta{
+    width: 50%;
+    box-sizing: border-box;
+    height: 220px;
+    border: 2px solid black;
+}
+.tarjeta h2{
+    font-size: smaller;
+}
+
+/* Las cajas las llevo al 100% y ajusto bordes */
+.Caja1{
+    width: 100%;
+}
+.Caja2{
+    width: 100%;    
+    border-top: 0;  
+    border-left: 0;
+    margin-top: 0;
+}
+
+/* Perfil al 100%, ajusto bordes y quito las columnas */
+.Perfil{
+    width: 100%;   
+    column-count: 1;
+    column-gap: 25px;
+    margin-top: 0;       
+    border-bottom: 2px black solid; 
+}
+
+/* Imagen */
+.imagen{
+    float:none;
+    border-radius: 10px;
+    border: solid 2px black;
+    transform: scale(1);  
+}
+}

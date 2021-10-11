@@ -6,6 +6,8 @@
 body{
     background-color: burlywood;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+      /* background-image: url("/images/fondo.jpg");
+      background-size: cover; */
 }
 
 /* Caja principal de tamaño 800pixeles */
@@ -126,13 +128,14 @@ form input,textarea {
     /*Para que se mantenga el tamaño*/
     box-sizing: border-box;
     box-shadow: 10px 10px 5px black;   
+    display: flex;
 }
 
 /* Esta es la tarjeta que tiene la edad y la direccion */
 /* --------------------------------------------------- */
 .tarjeta{
     background-color: brown;
-    
+    text-align: center;
     width: 200px;
     height: 210px;
     color: aliceblue;
@@ -142,9 +145,13 @@ form input,textarea {
     float: right;
     transition:all 0.3s ease;
     border: 2px solid black;
+    display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .tarjeta h2{
+    
     color: burlywood;
     font-size: 22px;
     margin-top: 4px;
@@ -230,7 +237,7 @@ footer{
 /* ---------------------------- */
 .Caja1{
     width: 50%;
-    height: 200px;
+    height: 250px;
     float: left;
     background-color: rgb(224, 184, 131);
     padding: 5px;
@@ -241,7 +248,9 @@ footer{
 
     margin-top: 20px;
   transition:all 0.3s ease;
-    
+
+
+  
 }
 .Caja1 h3{
     text-align: center;
@@ -264,7 +273,7 @@ footer{
 
 .Caja2{
     width: 50%;
-    height: 200px;
+    height: 250px;
     float: left;
     background-color: rgb(224, 184, 131);
     padding: 5px;
@@ -349,9 +358,9 @@ footer{
     max-width: 500px;
     margin-left: 0;
 }
-.tarjeta h2{
+/* .tarjeta h2{
     font-size: smaller;
-}
+} */
 
 /* Las cajas las llevo al 100% y ajusto bordes */
 .Caja1{
